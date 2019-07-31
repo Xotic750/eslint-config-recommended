@@ -50,7 +50,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eclint": "^2.8.1",
     "eslint": "=5.16.0",
     "@xotic750/eslint-find-rules": "^4.0.1",
     "eslint-friendly-formatter": "^4.0.1",
