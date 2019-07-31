@@ -358,6 +358,8 @@ module.exports = {
       rules: {
         strict: 'off',
         'compat/compat': 'off',
+        camelcase: ['error', {properties: 'never'}],
+        'babel/camelcase': ['error', {properties: 'never'}],
       },
     },
     {
