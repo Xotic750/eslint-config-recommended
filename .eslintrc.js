@@ -34,6 +34,9 @@ const eslintAgreed = {
       props: false,
     },
   ],
+  complexity: ['warn', 6],
+  'max-lines-per-function': ['warn', {max: 15, skipBlankLines: true, skipComments: true}],
+  'max-params': ['warn', 2],
   'no-console': isProduction ? 'error' : 'warn',
   'no-debugger': isProduction ? 'error' : 'warn',
 };
@@ -194,7 +197,12 @@ const jsdoc = {
   'jsdoc/require-param-type': 'warn',
   'jsdoc/require-hyphen-before-param-description': 'warn',
   'jsdoc/require-returns-type': 'warn',
-  'jsdoc/no-undefined-types': 'warn',
+  'jsdoc/no-undefined-types': [
+    'warn',
+    {
+      definedTypes: ['Readonly', 'ReadonlyArray'],
+    },
+  ],
   'jsdoc/require-param-name': 'warn',
   'jsdoc/valid-types': 'warn',
   'jsdoc/check-examples': 'warn',
@@ -282,11 +290,8 @@ module.exports = {
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-environments|env}
    */
   env: {
-    browser: true,
     commonjs: true,
     es6: true,
-    jest: true,
-    node: true,
   },
 
   /**
@@ -321,7 +326,7 @@ module.exports = {
    */
   overrides: [
     {
-      files: ['__tests__/**/*.js', 'postcss.config.js', 'webpack.*.js'],
+      files: ['__tests__/**/*.js', 'postcss.config.js', 'webpack.*.js', '.eslintrc.js'],
       rules: {
         'global-require': 'off',
         'import/no-extraneous-dependencies': [
@@ -338,12 +343,47 @@ module.exports = {
         'no-new-func': 'off',
         'promise/avoid-new': 'off',
         'no-restricted-globals': 'off',
+        complexity: 'off',
+        'max-lines-per-function': 'off',
+        'max-params': 'off',
       },
     },
     {
       files: ['webpack.*.js'],
+      env: {
+        browser: true,
+        node: true,
+        shelljs: true,
+      },
       rules: {
         strict: 'off',
+      },
+    },
+    {
+      files: ['postcss.config.js'],
+      env: {
+        node: true,
+      },
+    },
+    {
+      files: ['.eslintrc.js'],
+      env: {
+        node: true,
+      },
+    },
+    {
+      files: ['__tests__/**/*.js'],
+      env: {
+        atomtest: true,
+        browser: true,
+        commonjs: true,
+        embertest: true,
+        jasmine: true,
+        jest: true,
+        mocha: true,
+        node: true,
+        phantomjs: true,
+        qunit: true,
       },
     },
   ],
