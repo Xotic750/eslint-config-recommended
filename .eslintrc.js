@@ -346,6 +346,13 @@ module.exports = {
         complexity: 'off',
         'max-lines-per-function': 'off',
         'max-params': 'off',
+        'compat/compat': 'off',
+      },
+    },
+    {
+      files: ['postcss.config.js', 'webpack.*.js', '.eslintrc.js'],
+      env: {
+        node: true,
       },
     },
     {
@@ -357,27 +364,8 @@ module.exports = {
       },
       rules: {
         strict: 'off',
-        'compat/compat': 'off',
         camelcase: ['error', {properties: 'never'}],
         'babel/camelcase': ['error', {properties: 'never'}],
-      },
-    },
-    {
-      files: ['postcss.config.js'],
-      env: {
-        node: true,
-      },
-      rules: {
-        'compat/compat': 'off',
-      },
-    },
-    {
-      files: ['.eslintrc.js'],
-      env: {
-        node: true,
-      },
-      rules: {
-        'compat/compat': 'off',
       },
     },
     {

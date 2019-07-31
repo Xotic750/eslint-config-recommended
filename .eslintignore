@@ -1,6 +1,7 @@
 !.eslintrc.js
 !.prettierrc.json
 !.postcss.config.js
+!webpack.config.js
 node_modules/
 dist/
 __tests__/coverage/
