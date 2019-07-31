@@ -76,9 +76,9 @@ const classProperty = {
   'babel/camelcase': ['error'],
   'babel/new-cap': 'error',
   'babel/no-invalid-this': 'error',
-  'babel/object-curly-spacing': 'error',
+  'babel/object-curly-spacing': 'off',
   'babel/quotes': ['error', 'single', {avoidEscape: true}],
-  'babel/semi': 'error',
+  'babel/semi': 'off',
   'babel/no-unused-expressions': 'error',
   'babel/valid-typeof': 'error',
 };
@@ -357,6 +357,7 @@ module.exports = {
       },
       rules: {
         strict: 'off',
+        'compat/compat': 'off',
       },
     },
     {
@@ -364,11 +365,17 @@ module.exports = {
       env: {
         node: true,
       },
+      rules: {
+        'compat/compat': 'off',
+      },
     },
     {
       files: ['.eslintrc.js'],
       env: {
         node: true,
+      },
+      rules: {
+        'compat/compat': 'off',
       },
     },
     {
