@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-recommended",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Current recommendation ESLint config.",
   "homepage": "https://github.com/Xotic750/eslint-config-recommended",
   "author": {
@@ -61,10 +61,10 @@
     "eslint-plugin-eslint-comments": "^3.1.2",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-jsdoc": "^15.8.0",
     "eslint-plugin-json": "^1.4.0",
-    "eslint-plugin-lodash": "^5.1.0",
+    "eslint-plugin-lodash": "^5.1.1",
     "eslint-plugin-no-use-extend-native": "^0.4.1",
     "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-prettier": "^3.1.0",
@@ -72,9 +72,9 @@
     "eslint-plugin-sort-class-members": "^1.5.0",
     "eslint-plugin-switch-case": "^1.1.2",
     "in-publish": "^2.0.0",
-    "prettier": "^1.18.2 ",
+    "prettier": "^1.18.2",
     "safe-publish-latest": "^1.1.2",
-    "webpack": "^4.38.0"
+    "webpack": "^4.39.1"
   },
   "peerDependencies": {
     "babel-eslint": "^10",

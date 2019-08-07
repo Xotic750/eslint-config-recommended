@@ -176,6 +176,7 @@ const jest = {
   'jest/no-export': 'off',
   'jest/no-try-expect': 'off',
   'jest/no-standalone-expect': 'off',
+  'jest/no-expect-resolves': 'error',
 };
 
 /**
