@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-recommended",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Current recommendation ESLint config.",
   "homepage": "https://github.com/Xotic750/eslint-config-recommended",
   "author": {
@@ -19,7 +19,7 @@
     "security-fix": "npm run security -- fix",
     "lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
     "lint-fix": "npm run lint -- --fix",
-    "prettier-check": "eslint --print-config . | eslint-config-prettier-check"
+    "prettier-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
@@ -45,13 +45,13 @@
     "index.js"
   ],
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.0.0"
   },
   "devDependencies": {
-    "@xotic750/eslint-find-rules": "^4.0.1",
+    "@xotic750/eslint-find-rules": "^4.1.0",
     "babel-eslint": "^10.0.2",
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-loader": "^2.2.1",
@@ -64,7 +64,7 @@
     "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-jsdoc": "^15.8.0",
     "eslint-plugin-json": "^1.4.0",
-    "eslint-plugin-lodash": "^5.1.1",
+    "eslint-plugin-lodash": "^6.0.0",
     "eslint-plugin-no-use-extend-native": "^0.4.1",
     "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-prettier": "^3.1.0",
@@ -78,7 +78,7 @@
   },
   "peerDependencies": {
     "babel-eslint": "^10",
-    "eslint": "^5",
+    "eslint": "^5.16.0 || ^6.1.0",
     "eslint-friendly-formatter": "^4",
     "eslint-import-resolver-webpack": "^0",
     "eslint-loader": "^2",
@@ -91,7 +91,7 @@
     "eslint-plugin-jest": "^22",
     "eslint-plugin-jsdoc": "^15",
     "eslint-plugin-json": "^1",
-    "eslint-plugin-lodash": "^5",
+    "eslint-plugin-lodash": "^5.1.1||^6.0.0",
     "eslint-plugin-no-use-extend-native": "^0",
     "eslint-plugin-prefer-object-spread": "^1",
     "eslint-plugin-prettier": "^3",
