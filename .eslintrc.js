@@ -465,6 +465,7 @@ module.exports = {
       '.we',
     ],
     'import/resolver': {
+      node: {},
       webpack: {
         config: 'webpack.config.js',
       },
