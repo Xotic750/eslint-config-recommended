@@ -349,9 +349,6 @@ module.exports = {
         'max-params': 'off',
         'compat/compat': 'off',
       },
-    },
-    {
-      files: ['postcss.config.js', 'webpack.*.js', '.eslintrc.js'],
       env: {
         node: true,
       },
@@ -360,7 +357,6 @@ module.exports = {
       files: ['webpack.*.js'],
       env: {
         browser: true,
-        node: true,
         shelljs: true,
       },
       rules: {
@@ -379,7 +375,6 @@ module.exports = {
         jasmine: true,
         jest: true,
         mocha: true,
-        node: true,
         phantomjs: true,
         qunit: true,
       },
