@@ -317,7 +317,10 @@ module.exports = {
    *
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-globals|globals}
    */
-  globals: {},
+  globals: {
+    BigInt: false,
+    Symbol: false,
+  },
 
   /**
    * Sometimes a more fine-controlled configuration is necessary, for example if the configuration
