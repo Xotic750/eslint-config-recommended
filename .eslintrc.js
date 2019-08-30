@@ -177,6 +177,7 @@ const jest = {
   'jest/no-try-expect': 'off',
   'jest/no-standalone-expect': 'off',
   'jest/no-expect-resolves': 'error',
+  'jest/require-top-level-describe': 'error',
 };
 
 /**
