@@ -306,11 +306,11 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:jest/recommended',
-    'plugin:prettier/recommended',
     'plugin:promise/recommended',
     'plugin:lodash/recommended',
     'plugin:css-modules/recommended',
     'plugin:switch-case/recommended',
+    'plugin:prettier/recommended',
   ],
 
   /**
@@ -386,6 +386,11 @@ module.exports = {
   ],
 
   /**
+   * @see {@link https://github.com/babel/babel-eslint|parser}
+   */
+  parser: 'babel-eslint',
+
+  /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options|parserOptions}
    */
   parserOptions: {
@@ -393,7 +398,6 @@ module.exports = {
       impliedStrict: true,
     },
     ecmaVersion: 2019,
-    parser: 'babel-eslint', // https://github.com/vuejs/eslint-plugin-vue#what-is-the-use-the-latest-vue-eslint-parser-error
     sourceType: 'module',
   },
 
