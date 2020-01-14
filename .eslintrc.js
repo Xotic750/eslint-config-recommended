@@ -39,6 +39,14 @@ const eslintAgreed = {
   'max-params': ['warn', 2],
   'no-console': isProduction ? 'error' : 'warn',
   'no-debugger': isProduction ? 'error' : 'warn',
+  'default-param-last': ['error'],
+  'grouped-accessor-pairs': ['error', 'anyOrder'],
+  'no-constructor-return': 'error',
+  'no-dupe-else-if': 'error',
+  'no-import-assign': 'error',
+  'no-setter-return': 'error',
+  'prefer-exponentiation-operator': 'error',
+  'prefer-regex-literals': 'error',
 };
 
 /**
@@ -178,6 +186,8 @@ const jest = {
   'jest/no-standalone-expect': 'off',
   'jest/no-expect-resolves': 'error',
   'jest/require-top-level-describe': 'error',
+  'jest/prefer-hooks-on-top': 'off',
+  'jest/valid-title': 'off',
 };
 
 /**
@@ -217,6 +227,20 @@ const jsdoc = {
   'jsdoc/implements-on-classes': 'error',
   'jsdoc/match-description': 'off',
   'jsdoc/no-types': 'off',
+  'jsdoc/check-access ': 'off',
+  'jsdoc/check-property-names': 'off',
+  'jsdoc/check-values': 'off',
+  'jsdoc/empty-tags': 'off',
+  'jsdoc/no-bad-blocks': 'off',
+  'jsdoc/no-defaults': 'off',
+  'jsdoc/require-file-overview  ': 'off',
+  'jsdoc/require-property': 'off',
+  'jsdoc/require-property-description': 'off',
+  'jsdoc/require-property-name   ': 'off',
+  'jsdoc/require-property-type': 'off',
+  'jsdoc/check-access': 'off',
+  'jsdoc/require-file-overview': 'off',
+  'jsdoc/require-property-name': 'off',
 };
 
 /**
